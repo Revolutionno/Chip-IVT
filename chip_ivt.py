@@ -212,8 +212,14 @@ class HeatpumpMonitor:
         Returns:
             Dictionary of status information
         """
+        compressor_status = self.rego.read_status(Rego1000.REG_COMPRESSOR_STATUS)
+        if compressor_status is None:
+            compressor_display = 'N/A'
+        else:
+            compressor_display = 'ON' if compressor_status else 'OFF'
+        
         status = {
-            'Compressor': 'ON' if self.rego.read_status(Rego1000.REG_COMPRESSOR_STATUS) else 'OFF',
+            'Compressor': compressor_display,
             'Alarm': self.rego.read_status(Rego1000.REG_ALARM),
         }
         return status
@@ -318,8 +324,8 @@ Examples:
         
         if args.monitor:
             monitor.monitor_continuous(interval=args.interval)
-        else:
-            # Default to status display
+        elif args.status or True:
+            # Display status once (default action)
             monitor.display_status()
     
     finally:
