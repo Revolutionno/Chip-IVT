@@ -4,7 +4,7 @@ Chip's service tool for IVT heatpump Rego 1000
 Feature's
   - Active logging of each tempeture sensor (GT1, GT2, GT3, GT6, GT8, GT9, GT10, GT11)
   - GUI/NUI
-  - Access on distance or local access
+  - Access on distance or local
   - Export or archive logs
   - Notifications to your phone or pc
   - You can add custom sensors and give them a custom name
