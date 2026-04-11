@@ -12,4 +12,7 @@ Feature's
 
   [Preview Screenshot](preview.png)
 
+<img width="1918" height="938" alt="image" src="https://github.com/user-attachments/assets/399782e4-7f39-4e54-92a5-fbcfe37de34a" />
+
+
 Latest update 2026-4/6 16:00 Central Europe
