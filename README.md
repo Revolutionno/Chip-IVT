@@ -10,6 +10,6 @@ Feature's
   - You can add custom sensors and give them a custom name
   - Lang support currently only English and Swedish
 
-  [preview.png](preview.png)
+  [Preview Screenshot](preview.png)
 
 Latest update 2026-4/6 16:00 Central Europe
